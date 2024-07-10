@@ -6,7 +6,7 @@ services:
       - 5432:5432
     environment:
       POSTGRES_USER: ${JOURNEY_DB_USER}
-      POSTGRES_DB: ${JOURNEY_DB_NAME}
+      POSTGRES_DB: ${JOURNEY_DB_DATABASE}
       POSTGRES_PASSWORD: ${JOURNEY_DB_PASSWORD}
     volumes:
       - db:/var/lib/postgresql/data
